@@ -1,6 +1,6 @@
 variable "ebs_zone" {
     type = string
-    default = "us-east-la"
+    default = "eu-west-3"
     description = "The Availability Zone of the EBS"
 }
 
@@ -13,7 +13,7 @@ variable "ebs_size" {
 variable "ebs_tag" {
     type = map
     default = {
-        Name = "ebs-volume"
+        Name = "ebs-project"
     }
     description = "The tags for the EBS volume"
 }

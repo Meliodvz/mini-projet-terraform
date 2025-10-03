@@ -19,7 +19,7 @@ resource "aws_instance" "ec2_instance" {
   instance_type = var.instance_type
   key_name = var.key_name
   security_groups = ["${var.security_group_name}"]
-  tags = var.tags
+  tags = var.instance_tags
 
   root_block_device {
       volume_size = 10

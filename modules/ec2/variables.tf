@@ -7,7 +7,7 @@ variable "instance_type" {
 variable "key_name" {
   description = "Name of the SSH key pair"
   type        = string
-  default     = "projet-terraform"
+  default     = "terraform-project"
 }
 
 variable "security_group_name" {
@@ -16,11 +16,11 @@ variable "security_group_name" {
     description = "The name of the security group"
 }
 
-variable "tags" {
+variable "instance_tags" {
   description = "Tags to apply to the EC2 instance"
   type        = map
   default     = {
-    Name = "ec2"
+    Name = "ec2-project"
   }
 }
 
@@ -28,5 +28,4 @@ variable "user" {
   description = "User for the EC2 instance"
   type        = string
   default     = "ubuntu"
-  
 }
