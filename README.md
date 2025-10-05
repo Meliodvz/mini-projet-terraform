@@ -6,7 +6,7 @@ et ensuite d'exporter un certain nombre de métadonnées produites lors de l'ex�
 
 ## Etapes à réaliser
 
-- Ecrivez un module pour créer une instance ec2 utilisant la dernière version de ubuntu bionic (qui
+- Ecrivez un module pour créer une instance ec2 utilisant une version de ubuntu (qui
 s’attachera l’ebs et l’ip publique) dont la taille et le tag seront variabilisés
 - Ecrivez un module pour créer un volume ebs dont la taille sera variabilisée
 - Ecrivez un module pour une ip publique (qui s’attachera la security group)
